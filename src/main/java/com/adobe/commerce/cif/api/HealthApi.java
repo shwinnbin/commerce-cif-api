@@ -49,7 +49,7 @@ public interface HealthApi {
         @ApiResponse(code = HTTP_OK, message = HTTP_OK_MESSAGE),
         @ApiResponse(code = HTTP_SERVICE_UNAVAILABLE, message = HTTP_SERVICE_UNAVAILABLE_MESSAGE)
     })
-    void health(
+    void getHealth(
         @ApiParam(value = "Scope of the health check. Can be used to distinguish between different services.")
         @QueryParam(value = "scope")
         String scope
