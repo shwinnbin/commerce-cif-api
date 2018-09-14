@@ -6,20 +6,24 @@
         {
             "id": "category-1",
             "name": "Root category 1",
+            "slug": "root-category-1",
             "children": [
                 {
                     "id": "category-1-1",
-                    "name": "First child of category 1"
+                    "name": "First child of category 1",
+                    "slug": "first-child-of-category-2"
                 }
             ]
         },
         {
             "id": "category-2",
             "name": "Root category 2",
+            "slug": "root-category-2",
             "children": [
                 {
                     "id": "category-2-1",
-                    "name": "First child of category 2"
+                    "name": "First child of category 2",
+                    "slug": "first-child-of-category-2"
                 }
             ]
         }

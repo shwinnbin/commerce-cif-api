@@ -31,6 +31,9 @@ public abstract class AbstractProduct extends ModelWithDates {
     @ApiModelProperty(value = "The name of the product.", required = true)
     protected String name;
 
+    @ApiModelProperty(value = "Slug or human readable identifier that can be used for SEO friendly urls.")
+    protected String slug;
+
     @ApiModelProperty(value = "The description of the product.")
     protected String description;
 
@@ -68,6 +71,14 @@ public abstract class AbstractProduct extends ModelWithDates {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getSlug() {
+        return slug;
+    }
+
+    public void setSlug(String slug) {
+        this.slug = slug;
     }
 
     public List<MoneyValue> getPrices() {
